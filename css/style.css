@@ -1,0 +1,22 @@
+body{
+	background-color: #b5c9d4;
+	display:block;
+	vertical-align: middle;
+	text-align: center;
+	height:100%;
+	width:100%;
+}
+a{
+   color:inherit;
+   text-decoration: none;
+}
+div{
+	background-color: white; /* changed to white, seems to make everything a little cleaner*/
+}
+
+.device{
+	height:100%;
+	width:100%;
+	max-width:800px;
+	margin:auto; /* horizontally centers when max-width is invoked (ie screen is greater than 800 px wide)*/
+}

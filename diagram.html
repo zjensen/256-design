@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>O-Chem App</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"><!-- This is our style sheet-->
+		<link href="css/font-awesome.min.css" rel="stylesheet" ><!-- Font awesome style sheet for inserting icons -->
+		<link rel="stylesheet" type="text/css" href="css/drawingStyle.css">
+		
+	</head>
+	<body>
+		<div>
+			<div class="toolbar">
+				<div class="button home">
+					<i class="fa fa-home"></i>
+				</div>
+				<div class="button compounds">
+					<i class="fa fa-connectdevelop"></i>
+				</div>
+				<div class="button palette">
+					
+					<div tabindex="0" class="onclick-menu">
+						<i class="fa fa-paint-brush"></i>
+						<ul class="onclick-menu-content">
+							<li><button onclick="alert('click 1')">Look, mom</button></li>
+							<li><button onclick="alert('click 2')">no JavaScript!</button></li>
+							<li><button onclick="alert('click 3')">Pretty nice, right?</button></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="button eraser">
+					<i class="fa fa-eraser"></i>
+				</div>
+				<div class="button checker">
+					<i class="fa fa-check"></i>
+				</div>
+
+				
+				
+			</div>
+			<div id="drawingArea">
+
+
+			</div>
+
+
+
+
+
+			<!-- <div id="canvasbody">
+				<div id="page">
+		    		<div class="header">
+						<a id="new" class="navbtn" onclick="newCanvas()">Clear</a>
+		        		<div class="title"></div>
+		    		</div>
+		    			<div id="content"><p style="text-align:center">Loading Canvas...</p></div>
+				    	<div class="palette-case">
+							<div class="palette-box">
+								<div class="palette white" onclick="selectColor(this)"></div>
+							</div>	
+							<div class="palette-box">
+								<div class="palette red" onclick="selectColor(this)"></div>
+							</div>
+							<div class="palette-box">
+								<div class="palette blue" onclick="selectColor(this)"></div>
+							</div>
+							<div class="palette-box">
+								<div class="palette green" onclick="selectColor(this)"></div>
+							</div>
+							<div class="palette-box">
+								<div class="palette black" onclick="selectColor(this)"></div>
+							</div>
+							<div class="palette-box">
+								<p></p>
+							</div>	
+							<div style="clear:both"></div>
+					</div>
+				</div> 
+			</div> -->
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/drawingScript.js"></script>
+	</body>
+</html>
