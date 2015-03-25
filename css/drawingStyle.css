@@ -5,12 +5,54 @@
     background-color: #ecede8 !important;
 }
 
+td {
+    border: 1px solid inherit;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    padding: 50%;
+}
+
 .button{
-    height:20%;
+    height:15%;
+    margin-top:5%;
+    margin-bottom:5%;
     width:80%;
     margin-left:10%;
     margin-right:10%;
     font-size: 48px;
+}
+.button {
+     
+    /*Step 2: Basic Button Styles*/
+    display: block;
+    /*height: 100px;*/
+    /*width: 300px;*/
+    background: #fd7e47;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+     
+    /*Step 3: Text Styles*/
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     
+    /*Step 4: Fancy CSS3 Styles*/
+    background: -webkit-linear-gradient(top, #fd7e47, #b33e10);
+    background: -moz-linear-gradient(top, #fd7e47, #b33e10);
+    background: -o-linear-gradient(top, #fd7e47, #b33e10);
+    background: -ms-linear-gradient(top, #fd7e47, #b33e10);
+    background: linear-gradient(top, #fd7e47, #b33e10);
+     
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+     
+    -webkit-box-shadow: 0 8px 0 #8c3617;
+    -moz-box-shadow: 0 8px 0 #8c3617;
+    box-shadow: 0 8px 0 #8c3617;
+     
+    /*text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);*/
+     
 }
 i{
    padding-top:10%;
@@ -38,11 +80,17 @@ i{
 
 }
 
+.color{
+    /*width:10%;
+    height:10%;*/
+    padding:20%;
+}
 
 .onclick-menu {
     position: relative;
-    width:100%;
+    /*width:100%;*/
     display: inline-block;
+    outline: none !important;
 }
 .onclick-menu li{
     display: inline-table;
@@ -60,7 +108,10 @@ i{
     pointer-events: auto;
 }
 .onclick-menu-content {
-    left: 100%;
+    width:100%;
+    height:100%;
+    padding-left:0;
+    left: 111%;
     top: -50%;
     position: absolute;
     z-index: 1;
@@ -82,10 +133,12 @@ i{
 .green{
     background-color:#2c2;
 }
-.white{
-    background-color:#fff;
+.yellow{
+    background-color:yellow;
 }
 .black{
     background-color:#000;
-    border:2px dashed grey;
+}
+.gray{
+    background-color:gray;
 }

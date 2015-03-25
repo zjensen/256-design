@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<div>
+
 			<div class="toolbar">
 				<div class="button home">
 					<i class="fa fa-home"></i>
@@ -16,66 +17,31 @@
 				<div class="button compounds">
 					<i class="fa fa-connectdevelop"></i>
 				</div>
-				<div class="button palette">
-					
-					<div tabindex="0" class="onclick-menu">
-						<i class="fa fa-paint-brush"></i>
-						<ul class="onclick-menu-content">
-							<li><button onclick="alert('click 1')">Look, mom</button></li>
-							<li><button onclick="alert('click 2')">no JavaScript!</button></li>
-							<li><button onclick="alert('click 3')">Pretty nice, right?</button></li>
-						</ul>
-					</div>	
+				<div tabindex="0" class="button palette onclick-menu">
+					<i class="fa fa-paint-brush"></i>
+					<table class="onclick-menu-content">
+						<tr>
+							<td id="red" class="color red" onclick="changeColor(this.id)"></td>
+							<td id="yellow" class="color yellow" onclick="changeColor(this.id)"></td>
+						</tr>
+						<tr>
+							<td id="green" class="color green" onclick="changeColor(this.id)"></td>
+							<td id="blue" class="color blue" onclick="changeColor(this.id)"></td>
+						</tr>
+							<td id="black" class="color black" onclick="changeColor(this.id)"></td>
+							<td id="gray" class="color gray" onclick="changeColor(this.id)"></td>
+						</tr>
+					</table>
 				</div>
 				<div class="button eraser">
-					<i class="fa fa-eraser"></i>
+					<i class="fa fa-eraser" onclick="erase()"></i>
 				</div>
 				<div class="button checker">
 					<i class="fa fa-check"></i>
 				</div>
-
-				
-				
-			</div>
-			<div id="drawingArea">
-
-
 			</div>
 
-
-
-
-
-			<!-- <div id="canvasbody">
-				<div id="page">
-		    		<div class="header">
-						<a id="new" class="navbtn" onclick="newCanvas()">Clear</a>
-		        		<div class="title"></div>
-		    		</div>
-		    			<div id="content"><p style="text-align:center">Loading Canvas...</p></div>
-				    	<div class="palette-case">
-							<div class="palette-box">
-								<div class="palette white" onclick="selectColor(this)"></div>
-							</div>	
-							<div class="palette-box">
-								<div class="palette red" onclick="selectColor(this)"></div>
-							</div>
-							<div class="palette-box">
-								<div class="palette blue" onclick="selectColor(this)"></div>
-							</div>
-							<div class="palette-box">
-								<div class="palette green" onclick="selectColor(this)"></div>
-							</div>
-							<div class="palette-box">
-								<div class="palette black" onclick="selectColor(this)"></div>
-							</div>
-							<div class="palette-box">
-								<p></p>
-							</div>	
-							<div style="clear:both"></div>
-					</div>
-				</div> 
-			</div> -->
+			<div id="drawingArea"></div>
 		</div>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/drawingScript.js"></script>

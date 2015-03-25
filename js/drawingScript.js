@@ -21,7 +21,11 @@ document.getElementById('canvas').addEventListener("touchcancel", touchCancelHan
 var clickX = new Array();
 var clickY = new Array();
 var clickDrag = new Array();
+var clickColor = new Array();
+var clickWidth = new Array();
 var paint;
+var color = "black";
+var lineWidth = 5;
 
 document.getElementById('canvas').onmousedown = function(e) //mouse held down
 {
@@ -100,15 +104,17 @@ function addClick(x, y, dragging)
 	clickX.push(x);
 	clickY.push(y);
 	clickDrag.push(dragging);
+	clickColor.push(color);
+	clickWidth.push(lineWidth);
 }
 
 function redraw()
 {
 	context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
 
-	context.strokeStyle = "#df4b26";
+	context.strokeStyle = color;
 	context.lineJoin = "round";
-	context.lineWidth = 5;
+	context.lineWidth = lineWidth;
 		
 	for(var i=0; i < clickX.length; i++)
 	{		
@@ -123,6 +129,30 @@ function redraw()
 		}
 		context.lineTo(clickX[i], clickY[i]);
 		context.closePath();
+		context.strokeStyle = clickColor[i];
+		context.lineWidth = clickWidth[i];
 		context.stroke();
 	}
 }
+
+
+//Changing color
+
+function changeColor(id)
+{
+	document.getElementById("drawingArea").style.cursor = "crosshair";
+	color = id;
+	lineWidth = 5;
+}
+
+function erase()
+{
+	document.getElementById("drawingArea").style.cursor = 'url("http://dygraphs.com/tests/drawing/cursor-eraser.png"), auto';
+	color = "white";
+	lineWidth = 20;
+}
+
+
+
+
+
