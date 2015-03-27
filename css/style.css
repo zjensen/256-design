@@ -20,3 +20,40 @@ div{
 	max-width:800px;
 	margin:auto; /* horizontally centers when max-width is invoked (ie screen is greater than 800 px wide)*/
 }
+
+/*Open CSS */
+.menu
+{
+	outline:solid black 1px;
+	height:15%;
+	width:100%;
+}
+
+.moleculesToOpen
+{
+	outline:solid black 1px;
+	height:85%;
+	width:100%;
+}
+
+.row
+{
+	outline:solid black 1px;
+	height:17%;
+	width:100%;
+	display: inline-block;
+}
+
+.molecule
+{
+	outline:solid black 1px;
+	height:100%;
+	width:65%;
+}
+
+.caption
+{
+	outline:solid black 1px;
+	height:100%;
+	width:35%;
+}
