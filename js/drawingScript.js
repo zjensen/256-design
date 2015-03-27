@@ -152,6 +152,23 @@ function erase()
 	lineWidth = 20;
 }
 
+//Changing the icons when the popup is expanded or closed
+function popup(element)
+{
+	if(element.classList.contains('fa-plus-circle'))
+	{
+		element.classList.remove('fa-plus-circle');
+		element.classList.add('fa-minus-circle');
+		document.getElementById('menu2').classList.remove("hidden");
+	}
+	else
+	{
+		element.classList.add('fa-plus-circle');
+		element.classList.remove('fa-minus-circle');
+		document.getElementById('menu2').classList.add("hidden");
+	}
+}
+
 
 
 

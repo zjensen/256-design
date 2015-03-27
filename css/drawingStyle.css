@@ -5,57 +5,29 @@
     background-color: #ecede8 !important;
 }
 
-td {
+.toolbar td {
     border: 1px solid inherit;
     border-radius: 50%;
     -moz-border-radius: 50%;
-    padding: 50%;
+    /*padding: 50%;*/
 }
 
 .button{
-    height:15%;
-    margin-top:5%;
-    margin-bottom:5%;
+    height:20%;
+    /*margin-top:5%;*/
+    /*margin-bottom:5%;*/
     width:80%;
     margin-left:10%;
     margin-right:10%;
     font-size: 48px;
+    color:#fd7e47;
+    display:table;
 }
-.button {
-     
-    /*Step 2: Basic Button Styles*/
-    display: block;
-    /*height: 100px;*/
-    /*width: 300px;*/
-    background: #fd7e47;
-    border: 2px solid rgba(33, 68, 72, 0.59);
-     
-    /*Step 3: Text Styles*/
-    color: rgba(0, 0, 0, 0.55);
-    text-align: center;
-    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-     
-    /*Step 4: Fancy CSS3 Styles*/
-    background: -webkit-linear-gradient(top, #fd7e47, #b33e10);
-    background: -moz-linear-gradient(top, #fd7e47, #b33e10);
-    background: -o-linear-gradient(top, #fd7e47, #b33e10);
-    background: -ms-linear-gradient(top, #fd7e47, #b33e10);
-    background: linear-gradient(top, #fd7e47, #b33e10);
-     
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-     
-    -webkit-box-shadow: 0 8px 0 #8c3617;
-    -moz-box-shadow: 0 8px 0 #8c3617;
-    box-shadow: 0 8px 0 #8c3617;
-     
-    /*text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);*/
-     
-}
+
 i{
-   padding-top:10%;
+   /*padding-top:10%;*/
+   display:table-cell !important;
+   vertical-align: middle;
 }
 
 .toolbar div{
@@ -89,7 +61,6 @@ i{
 .onclick-menu {
     position: relative;
     /*width:100%;*/
-    display: inline-block;
     outline: none !important;
 }
 .onclick-menu li{
@@ -112,7 +83,6 @@ i{
     height:100%;
     padding-left:0;
     left: 111%;
-    top: -50%;
     position: absolute;
     z-index: 1;
 
@@ -122,6 +92,78 @@ i{
     transition: visibility 0.5s;
 }
 
+#menuButton{
+    color:#fd7e47;
+    position: absolute;
+    width:20%;
+    height:100%;
+    right:0;
+    font-size: 48px;
+    display:table-cell !important;
+}
+.menu2 {
+    height:20%;
+    color:#fd7e47;
+    width:80%;
+    text-align: center;
+    font-size: 48px;
+    display:table;
+}
+.menu2 i{
+    width:25%;
+    height:100%;
+    display:table-cell;
+}
+
+.menu2 i:before{
+    padding: 10px;
+    border-radius: 34px;
+    background-color: ecede8;
+}
+#menuButton:before{
+    padding: 10px;/*
+    border-radius: 34px;
+    background-color: ecede8;*/
+}
+
+.onclick-menu2 {
+    position: relative;
+    width:100%;
+    outline: none !important;
+}
+.onclick-menu2 li{
+    display: inline-table;
+}
+.onclick-menu2:focus {
+    /* clicking on label should toggle the menu */
+    /*pointer-events: none;*/
+}
+.onclick-menu2:focus .onclick-menu-content2 {
+    /*  opacity is 1 in opened state (see below) */
+    /*opacity: 1;*/
+    /*visibility: visible;*/
+
+    /* don't let pointer-events affect descendant elements */
+    /*pointer-events: auto;*/
+}
+.onclick-menu-content2 {
+    /*width:100%;*/
+    /*height:100%;*/
+    padding-left:0;
+    /*left: 111%;*/
+    /*top: -50%;*/
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+    /* use opacity to fake immediate toggle */
+    opacity: 1;
+    /*visibility: hidden;*/
+    transition: visibility 0.5s;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
 
 
 .red{
