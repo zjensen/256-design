@@ -27,6 +27,7 @@ div{
 	outline:solid black 1px;
 	height:15%;
 	width:100%;
+	background:pink;
 }
 
 .moleculesToOpen
@@ -39,9 +40,40 @@ div{
 .row
 {
 	outline:solid black 1px;
-	height:17%;
+	height:20%;
 	width:100%;
-	display: inline-block;
+	display:inline-flex;
+	background:blue;
+	position: relative;
+}
+
+.testosterone
+{
+	background-image: url("testosterone.jpg");
+	background-size: 75% 100%;
+	background-repeat: no-repeat;
+}
+
+.ribose
+{
+	background-image: url("ribose.jpg");
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+}
+
+.top
+{
+	top:0;
+}
+
+.bottom
+{
+	bottom:0;
+}
+
+.right
+{
+	right:0;
 }
 
 .molecule
@@ -56,4 +88,5 @@ div{
 	outline:solid black 1px;
 	height:100%;
 	width:35%;
+	background: green;
 }
