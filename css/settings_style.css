@@ -95,7 +95,41 @@ td.td_settings {
 	padding: 10px;
 }*/
 
+div.i_settings {
+	font-size: 400%;
+	/*background-color: #b5c9d4;*/
+	float: left;
+	color: #fd7e47;
+	font-size: 400%;
+	padding: 1%;
+	
+}
 
+div.text {
+	font-size: 400%;
+	float: left;
+	color: #fd7e47;
+	font-size: 400%;
+	padding: 1%;
+}
+
+div.customize {
+	font-size: 400%;
+	float: left;
+	color: #fd7e47;
+	font-size: 300%;
+	padding: 1%;
+}
+
+div:hover {
+	
+
+	}
+
+.div i {
+	color: #fd7e47;
+	font-size: 300%;
+}
 
 
 /*********************/
