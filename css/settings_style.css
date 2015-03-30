@@ -125,10 +125,15 @@ div:hover {
 	
 
 	}
-
+/*
 .div i {
 	color: #fd7e47;
 	font-size: 300%;
+}*/
+
+.div i {
+	color: #fd7e47;
+	font-size: 300%;;
 }
 
 
