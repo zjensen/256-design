@@ -5,6 +5,10 @@
     background-color: #ecede8 !important;
 }
 
+i{
+    font-size:48px !important;
+}
+
 .toolbar td {
     border: 1px solid inherit;
     border-radius: 50%;
@@ -34,6 +38,7 @@ i{
     background-color: #ecede8 !important;
 }
 #drawingArea{
+    /*position:relative;*/
     cursor:crosshair ;
     background-color:#fff;
     width:85%;
@@ -41,7 +46,9 @@ i{
     float:left;
 }
 #canvas{
-    width:100%;
+    left:15%;
+    position: absolute;
+    width:85%;
     height:100%;
 }
 
@@ -93,13 +100,17 @@ i{
 }
 
 #menuButton{
-    color:#fd7e47;
+    color: #fd7e47;
     position: absolute;
-    width:20%;
-    height:100%;
-    right:0;
+    width: 20%;
+    height: 20%;
+    right: 0;
     font-size: 48px;
-    display:table-cell !important;
+    display: table !important;
+}
+#menuButton:before {
+    display: table-cell;
+    vertical-align: middle;
 }
 .menu2 {
     height:20%;
