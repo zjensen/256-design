@@ -46,12 +46,6 @@ table.tb_settings {
 	
 }
 
-table.customize {
-	width: 60%;
-	padding: 5%;
-	position: left;
-
-}
 tr.tr_settings {
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
@@ -60,10 +54,7 @@ tr.tr_settings {
 td:hover {
 	
 	
-/*color: #ecede8;
-	font-style: #ecede8;*/
-	background-color: #ecede8;
-	text-shadow: 5px 5px 10px  #73777a;
+
 }
 
 td:active {
@@ -73,7 +64,10 @@ td:active {
 }
 
 tr:hover {
-	
+	/*color: #ecede8;
+	font-style: #ecede8;*/
+	background-color: #ecede8;
+	text-shadow: 5px 5px 10px  #73777a;
 }
 
 td.td_settings {
@@ -113,22 +107,14 @@ div.text {
 	padding: 1%;
 }
 
-div.customize {
-	font-size: 400%;
-	float: left;
-	color: #fd7e47;
-	font-size: 300%;
-	padding: 1%;
-}
-
 div:hover {
 	
 
 	}
 
 i {
-	color: #fd7e47;
-	font-size: 300%;
+	
+	font-size: 400%;
 }
 
 
