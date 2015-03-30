@@ -37,6 +37,14 @@ div{
 	width:100%;
 }
 
+.molecule i
+{
+	display: table-cell !important;
+	vertical-align: middle;
+	font-size: 48px;
+	text-align: right;
+}
+
 .row
 {
 	outline:solid black 1px;
@@ -44,7 +52,6 @@ div{
 	width:100%;
 	display:inline-flex;
 	background:blue;
-	position: relative;
 }
 
 .testosterone
@@ -81,6 +88,8 @@ div{
 	outline:solid black 1px;
 	height:100%;
 	width:65%;
+	position: relative;
+	display: table;
 }
 
 .caption
