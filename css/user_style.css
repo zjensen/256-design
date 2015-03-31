@@ -14,16 +14,12 @@ div{
 	background-color: white; /* changed to white, seems to make everything a little cleaner*/
 }
 
-
-
 .device{
 	height:100%;
 	width:100%;
 	max-width:800px;
 	margin:auto; /* horizontally centers when max-width is invoked (ie screen is greater than 800 px wide)*/
 }
-
-/* Settings Style Stuff*/
 
 /*
 #ecede8 - Off white
@@ -32,55 +28,13 @@ div{
 #73777a - Dark gray
 */
 
-/*NOTE FROM STEVEN --->> MY CODE NO LONGER USES THIS STYLE SHEET,
-FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
-
-.settings {
-	font-size: 40px;
+table {
 	position: center;
+	padding-top: 5%;
+	padding-left: 5%;
 }
 
-table.tb_settings {
-	width: 100%;
-	height: 90%;
-	/*border: 1px solid grey;*/
-	padding: 5%;
-	position: center;
-	text-align: center;
-	
-}
-
-table.customize {
-	width: 60%;
-	padding: 5%;
-	position: left;
-
-}
-tr.tr_settings {
-	border: 2px solid red;
-	/*background-color: #b5c9d4;*/
-}
-
-td:hover {
-	
-	
-/*color: #ecede8;
-	font-style: #ecede8;*/
-	background-color: #ecede8;
-	text-shadow: 5px 5px 10px  #73777a;
-}
-
-td:active {
-	color: #b5c9d4  ;
-	text-shadow: 0px 0px 0px;
-
-}
-
-tr:hover {
-	
-}
-
-td.td_settings {
+td {
 	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
@@ -90,16 +44,24 @@ td.td_settings {
 	padding: 10px;
 }
 
-/*td.filler {
-	color: white;
+td.filler {
+	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
 	font-size: 200%;
 
+	
 	padding: 10px;
-}*/
+}
+
+td:hover {
+	
+	border: 5px solid #fd7e47;
+	box-shadow: 0px 0px 10px #fd7e47;
 
 
-
-
-/*********************/
+}
+ 
+td.filler:hover {
+	box-shadow: 0px 0px 0px;
+}

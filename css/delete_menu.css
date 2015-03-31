@@ -31,16 +31,12 @@ div{
 #b5c9d4 - Light blue/gray
 #73777a - Dark gray
 */
-
-/*NOTE FROM STEVEN --->> MY CODE NO LONGER USES THIS STYLE SHEET,
-FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
-
 .settings {
 	font-size: 40px;
 	position: center;
 }
 
-table.tb_settings {
+table.list {
 	width: 100%;
 	height: 90%;
 	/*border: 1px solid grey;*/
@@ -50,35 +46,19 @@ table.tb_settings {
 	
 }
 
-table.customize {
-	width: 60%;
-	padding: 5%;
-	position: left;
-
-}
 tr.tr_settings {
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
 }
 
-td:hover {
+td.td_settings:hover {
 	
-	
-/*color: #ecede8;
-	font-style: #ecede8;*/
-	background-color: #ecede8;
-	text-shadow: 5px 5px 10px  #73777a;
-}
+	border: 5px solid #fd7e47;
+	box-shadow: 0px 0px 10px #fd7e47;
 
-td:active {
-	color: #b5c9d4  ;
-	text-shadow: 0px 0px 0px;
 
 }
 
-tr:hover {
-	
-}
 
 td.td_settings {
 	color: #73777a;
@@ -90,16 +70,50 @@ td.td_settings {
 	padding: 10px;
 }
 
-/*td.filler {
-	color: white;
+div.i_settings {
+	font-size: 400%;
+	/*background-color: #b5c9d4;*/
+	float: left;
+	color: #fd7e47;
+	font-size: 400%;
+	padding: 1%;
+	
+}
+
+div.text {
+	font-size: 400%;
+	float: left;
+	color: #fd7e47;
+	font-size: 400%;
+	padding: 1%;
+}
+
+td.filler {
+	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
 	font-size: 200%;
 
+	
 	padding: 10px;
-}*/
+}
 
+i.icon {
+	color: #fd7e47;
+	background-color: white;
+	background-position: fixed;
+	font-size: 300%;
+}
 
+i.icon:hover {
+	text-shadow: 0px 0px 15px #73777a;
 
+	
+}
+
+i.icon:active {
+	color: #73777a;
+	text-shadow: 0px 0px 15px #fd7e47;
+	
 
 /*********************/
