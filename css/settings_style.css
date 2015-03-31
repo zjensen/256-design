@@ -36,9 +36,9 @@ div{
 	position: center;
 }
 
-table.tb_settings {
+table.tb_style {
 	width: 100%;
-	height: 90%;
+	height: 60px;
 	/*border: 1px solid grey;*/
 	padding: 5%;
 	position: center;
@@ -48,54 +48,44 @@ table.tb_settings {
 
 table.customize {
 	width: 60%;
-	padding: 5%;
 	position: left;
+	text-align: center;
+	font-style: Helvetica;
+	font-size: 200%;
+
 
 }
-tr.tr_settings {
+
+th.header {
+	text-align: center;
+	color: #73777a;
+}
+
+tr.r_style{
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
 }
 
-td:hover {
-	
-	
-/*color: #ecede8;
-	font-style: #ecede8;*/
-	background-color: #ecede8;
-	text-shadow: 5px 5px 10px  #73777a;
-}
-
-td:active {
-	color: #b5c9d4  ;
-	text-shadow: 0px 0px 0px;
-
-}
 
 tr:hover {
 	
 }
 
-td.td_settings {
+td.interactive {
 	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
 	font-size: 200%;
 
-	border: 5px solid #73777a;
+	/*border: 5px solid #73777a;*/
 	padding: 10px;
 }
 
-/*td.filler {
-	color: white;
-	text-align: center;
-	font-style: Helvetica;
-	font-size: 200%;
+td.invisible {
 
-	padding: 10px;
-}*/
+}
 
-div.i_settings {
+div.i {
 	font-size: 400%;
 	/*background-color: #b5c9d4;*/
 	float: left;
@@ -125,15 +115,18 @@ div:hover {
 	
 
 	}
-/*
-.div i {
-	color: #fd7e47;
-	font-size: 300%;
-}*/
 
-.div i {
+i.icon {
 	color: #fd7e47;
-	font-size: 300%;;
+	background-color: white;
+	background-position: fixed;
+	font-size: 300%;
+}
+
+i.icon:hover {
+	color: #73777a;
+	text-shadow: 0px 0px 15px #fd7e47;
+	font-size: 300%;
 }
 
 

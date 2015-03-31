@@ -51,24 +51,14 @@ tr.tr_settings {
 	/*background-color: #b5c9d4;*/
 }
 
-td:hover {
+td.td_settings:hover {
 	
-	
+	border: 5px solid #fd7e47;
+	box-shadow: 0px 0px 10px #fd7e47;
+
 
 }
 
-td:active {
-	color: #b5c9d4  ;
-	text-shadow: 0px 0px 0px;
-
-}
-
-tr:hover {
-	/*color: #ecede8;
-	font-style: #ecede8;*/
-	background-color: #ecede8;
-	text-shadow: 5px 5px 10px  #73777a;
-}
 
 td.td_settings {
 	color: #73777a;
@@ -107,15 +97,32 @@ div.text {
 	padding: 1%;
 }
 
-div:hover {
-	
+td.filler {
+	color: #73777a;
+	text-align: center;
+	font-style: Helvetica;
+	font-size: 200%;
 
-	}
-
-i {
 	
-	font-size: 400%;
+	padding: 10px;
 }
 
+i.icon {
+	color: #fd7e47;
+	background-color: white;
+	background-position: fixed;
+	font-size: 300%;
+}
+
+i.icon:hover {
+	text-shadow: 0px 0px 15px #73777a;
+
+	
+}
+
+i.icon:active {
+	color: #73777a;
+	text-shadow: 0px 0px 15px #fd7e47;
+	
 
 /*********************/

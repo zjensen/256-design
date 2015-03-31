@@ -3,48 +3,39 @@
 		<meta charset="utf-8">
 		<title>O-Chem App - Settings</title>
 		<script src="js/settings.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css"><!-- This is our style sheet-->
+		<link rel="stylesheet" type="text/css" href="css/settings_style.css"><!-- This is our style sheet-->
 		<link href="css/font-awesome.min.css" rel="stylesheet" ><!-- Font awesome style sheet for inserting icons -->
 	</head>
 	<body>
 		<div class="device">
 			<!-- Place everything in here IF you want a more vertical feel. This div has a maxwidth of 800px so it wont look awkward on big devices -->
 			<div class = "settings">
-			<table class = "tb_settings">
-				<tr class="td_settings">
-					<td class="td_settings"></td>
-						<th> Settings </th>
-					<td class="td_settings"></td>
-				<tr class="td_settings">
-					<td class="td_settings"></td>
-					<td class="td_settings"class="td_settings" onclick="user_profile()"> 
-						<div class="i_settings"> <i class="fa fa-user"></i> </div> <br>User Profile </td>
-					<td class="td_settings"></td>
+			<table class = "tb_style">
+				
+					
+						<th class = "header" colspan = "3"> Settings </th>
+					
+				<tr>
+					
+					<td class="interactive" onclick="user_profile()"> 
+						<i class="icon fa fa-user"></i> <br> User Profile </td>
+					
+					
+					<td class="interactive" onclick="delete_notes()"> 
+						 <i class="icon fa fa-trash-o"></i> <br>  Delete Diagrams </td>
+					
+				
+					
+					<td class="interactive" onclick="customize_tools()"> 
+						<i class="icon fa fa-codepen"></i> <br> Customize Tools </td>
 				</tr>
-				<tr class="td_settings">
-					<td class="td_settings"></td>
-					<td class="td_settings"class="td_settings" onclick="edit_notes()">
-						<div class="i_settings"><i class="fa fa-file-text"></i> </div> <br>Edit Notes </td>
-					<td class="td_settings"></td>
-				</tr>
-				<tr class="td_settings">
-					<td class="td_settings"></td>
-					<td class="td_settings"class="td_settings" onclick="delete_notes()"> 
-						<div class="i_settings"> <i class="fa fa-trash-o"></i> </div> <br>Delete Notes </td>
-					<td class="td_settings"></td>
-				<tr class="td_settings">
-					<td class="td_settings"c></td>
-					<td class="td_settings"class="td_settings"onclick="customize_tools()"> 
-						<div class="i_settings"> <i class="fa fa-codepen"></i> </div> <br>Customize Tools </td>
-					<td class="td_settings"></td>
-				</tr>
-			</table>
-			<div> <a href= "http://tinyurl.com/oslh4f9"> BACK </a>
+				</table>
+			<div> <a href= "index.html"> BACK </a>
 		</div>
-			<!-- <div class ="settings"> Reorganize Drawing Menu  <i class="fa fa-bolt" > </i></div>
-			<div class ="settings">  <i class="fa fa-heartbeat"></i>Delete Diagrams </div>
-			<div> <i class="fa fa-scissors"></i> Edit Diagrams </div>
-			<div> <i class="fa fa-file"> Something </i> Other Stuff</div> -->
+			<!-- <div class ="settings"> Reorganize Drawing Menu  <i class="icon fa fa-bolt" > </i></div>
+			<div class ="settings">  <i class="icon fa fa-heartbeat"></i>Delete Diagrams </div>
+			<div> <i class="icon fa fa-scissors"></i> Edit Diagrams </div>
+			<div> <i class="icon fa fa-file"> Something </i> Other Stuff</div> -->
 		</div>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
