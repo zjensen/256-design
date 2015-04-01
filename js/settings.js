@@ -18,3 +18,8 @@ function customize_tools()
 {
 	open("customize_tools.html","_self");
 }
+
+function logout()
+{
+	open("login.html","_self");
+}
