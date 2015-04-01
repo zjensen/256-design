@@ -64,6 +64,7 @@ p, div, header, a, section
 #settings th.header {
 	text-align: center;
 	color: #73777a;
+	font-size: -webkit-xxx-large;
 }
 
 #settings tr.r_style{
@@ -79,8 +80,7 @@ p, div, header, a, section
 #settings td.interactive {
 	color: #73777a;
 	text-align: center;
-	font-style: Helvetica;
-	font-size: 200%;
+	font-size: 150%;
 	/*border: 5px solid #73777a;*/
 	padding: 10px;
 }
