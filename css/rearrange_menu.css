@@ -8,7 +8,6 @@
 }
 #settings a{
    color:inherit;
-   text-decoration: none;
 }
 #settings div{
 	background-color: white; /* changed to white, seems to make everything a little cleaner*/
@@ -105,6 +104,16 @@
 
 	
 	padding: 10px;
+}
+
+#settings a.link:hover {
+	text-decoration: none;
+	text-shadow: 0 0 15px #fd7e47;
+}
+
+#settings a.link:active {
+	text-shadow: 0 0 10px #73777a;
+	color: #fd7e47;
 }
 
 #settings i.icon {
