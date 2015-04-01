@@ -3,7 +3,7 @@
     width:15%;
     float:left;
     height:100%;
-    background-color: #3672A3 !important;
+    background-color: #FF9330  !important;
 }
 
 i{
@@ -22,7 +22,7 @@ i{
     margin-left:10%;
     margin-right:10%;
     font-size: 48px;
-    color:#fd7e47;
+    color:white;
     display:table;
 }
 
@@ -42,7 +42,7 @@ i{
 }
 
 .toolbar div{
-    background-color: #3672A3 !important;
+    background-color: #FF9330  !important;
 }
 #drawingArea{
     cursor:crosshair ;
@@ -96,7 +96,7 @@ i{
     left: 111%;
     position: absolute;
     z-index: 1;
-	background-color:#558CBA;
+	background-color:#7198BA;
     /* use opacity to fake immediate toggle */
     opacity: 0;
     visibility: hidden;
@@ -120,9 +120,9 @@ i{
     vertical-align: middle;
 }*/
 .menu2 {
-background-color: #558CBA;
+background-color: #7198BA;
 height: 100%;
-color: #fd7e47;
+color: white;
 width: 95%;
 text-align: center;
 font-size: 48px;
