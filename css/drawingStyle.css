@@ -120,16 +120,17 @@ i{
     vertical-align: middle;
 }*/
 .menu2 {
-background-color: #558CBA;
-height: 100%;
-color: #fd7e47;
-width: 95%;
-text-align: center;
-font-size: 48px;
-display: table;
--webkit-transition: width 2s;
-transition: width 2s;
-border-radius: 0px 15px 15px 0px;
+    z-index: 3;
+    background-color: #558CBA;
+    height: 100%;
+    color: #fd7e47;
+    width: 95%;
+    text-align: center;
+    font-size: 48px;
+    display: table;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    border-radius: 0px 15px 15px 0px;
 }
 .menu2 i{
     width:20%;
@@ -142,8 +143,8 @@ border-radius: 0px 15px 15px 0px;
     position: absolute;
     width:85%;
     height:20%;
-    z-index: 3;
     outline: none !important;
+    z-index: 3;
 }
 .onclick-menu2 li{
     display: inline-table;
@@ -162,6 +163,9 @@ border-radius: 0px 15px 15px 0px;
     visibility: hidden;
     opacity: 0;
     width:50%;
+    z-index: 0 !important
+}
+.hiddenTop{
     z-index: 0 !important
 }
 
