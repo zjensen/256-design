@@ -1,4 +1,5 @@
 .toolbar{
+    text-align: center;
     width:15%;
     float:left;
     height:100%;
@@ -106,32 +107,27 @@ i{
     vertical-align: middle;
 }*/
 .menu2 {
-    background-color: transparent;
-    padding-top:10px;
-    height:0;
+    background-color: #ecede8;
+    height:100%;
     color:#fd7e47;
-    width:80%;
+    width:100%;
     text-align: center;
     font-size: 48px;
     display:table;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
 }
 .menu2 i{
-    width:25%;
-    height:0;
+    width:20%;
+    /*height:0;*/
     /*height:100%;*/
     display:table-cell;
-}
-
-.menu2 i:before{
-    padding: 10px;
-    border-radius: 34px;
-    background-color: ecede8;
 }
 
 .onclick-menu2 {
     position: absolute;
     width:85%;
-    height:0;
+    height:20%;
     z-index: 3;
     outline: none !important;
 }
@@ -146,11 +142,12 @@ i{
     visibility: visible;
     /* use opacity to fake immediate toggle */
     opacity: 1;
-    transition: visibility 0.5s;
+    /*transition: visibility 2s;*/
 }
 .hidden{
     visibility: hidden;
     opacity: 0;
+    width:50%;
     z-index: 0 !important
 }
 
