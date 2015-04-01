@@ -1,3 +1,7 @@
+body,p,a,div
+{
+	font-family:'Quicksand';
+}
 #settings body{
 	background-color: #b5c9d4;
 	display:block;

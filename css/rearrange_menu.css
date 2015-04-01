@@ -1,3 +1,7 @@
+p,div,a,body
+{
+	font-family: 'Quicksand';
+}
 #settings body{
 	background-color: #b5c9d4;
 	display:block;
@@ -63,7 +67,6 @@
 #settings td.td_settings {
 	color: #73777a;
 	text-align: center;
-	font-style: Helvetica;
 	font-size: 200%;
 
 	border: 5px solid #73777a;
