@@ -1,3 +1,4 @@
+#settings body{
 	background-color: #b5c9d4;
 	display:block;
 	vertical-align: middle;
@@ -5,14 +6,17 @@
 	height:100%;
 	width:100%;
 }
+#settings a{
    color:inherit;
    text-decoration: none;
 }
+#settings div{
 	background-color: white; /* changed to white, seems to make everything a little cleaner*/
 }
 
 
 
+#settings .device{
 	height:100%;
 	width:100%;
 	max-width:800px;
@@ -27,10 +31,12 @@
 #b5c9d4 - Light blue/gray
 #73777a - Dark gray
 */
+#settings .settings {
 	font-size: 40px;
 	position: center;
 }
 
+#settings table.tb_style {
 	width: 100%;
 	height: 60px;
 	/*border: 1px solid grey;*/
@@ -40,6 +46,7 @@
 	
 }
 
+#settings table.customize {
 	width: 60%;
 	position: left;
 	text-align: center;
@@ -49,18 +56,22 @@
 
 }
 
+#settings th.header {
 	text-align: center;
 	color: #73777a;
 }
 
+#settings tr.r_style{
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
 }
 
 
+#settings tr:hover {
 	
 }
 
+#settings td.interactive {
 	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
@@ -70,9 +81,11 @@
 	padding: 10px;
 }
 
+#settings td.invisible {
 
 }
 
+#settings div.i {
 	font-size: 400%;
 	/*background-color: #b5c9d4;*/
 	float: left;
@@ -82,6 +95,7 @@
 	
 }
 
+#settings div.text {
 	font-size: 400%;
 	float: left;
 	color: #fd7e47;
@@ -89,6 +103,7 @@
 	padding: 1%;
 }
 
+#settings div.customize {
 	font-size: 400%;
 	float: left;
 	color: #fd7e47;
@@ -96,16 +111,19 @@
 	padding: 1%;
 }
 
+#settings div:hover {
 	
 
 	}
 
+#settings i.icon {
 	color: #fd7e47;
 	background-color: white;
 	background-position: fixed;
 	font-size: 300%;
 }
 
+#settings i.icon:hover {
 	color: #73777a;
 	text-shadow: 0px 0px 15px #fd7e47;
 	font-size: 300%;

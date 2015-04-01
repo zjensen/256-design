@@ -1,3 +1,4 @@
+#settings body{
 	background-color: #b5c9d4;
 	display:block;
 	vertical-align: middle;
@@ -5,9 +6,11 @@
 	height:100%;
 	width:100%;
 }
+#settings a{
    color:inherit;
    text-decoration: none;
 }
+#settings div{
 	background-color: white; /* changed to white, seems to make everything a little cleaner*/
 }
 
@@ -32,10 +35,12 @@
 /*NOTE FROM STEVEN --->> MY CODE NO LONGER USES THIS STYLE SHEET,
 FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
 
+#settings .settings {
 	font-size: 40px;
 	position: center;
 }
 
+#settings table.tb_settings {
 	width: 100%;
 	height: 90%;
 	/*border: 1px solid grey;*/
@@ -45,15 +50,18 @@ FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
 	
 }
 
+#settings table.customize {
 	width: 60%;
 	padding: 5%;
 	position: left;
 
 }
+#settings tr.tr_settings {
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
 }
 
+#settings td:hover {
 	
 	
 /*color: #ecede8;
@@ -62,14 +70,17 @@ FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
 	text-shadow: 5px 5px 10px  #73777a;
 }
 
+#settings td:active {
 	color: #b5c9d4  ;
 	text-shadow: 0px 0px 0px;
 
 }
 
+#settings tr:hover {
 	
 }
 
+#settings td.td_settings {
 	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
@@ -78,15 +89,6 @@ FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
 	border: 5px solid #73777a;
 	padding: 10px;
 }
-
-/*td.filler {
-	color: white;
-	text-align: center;
-	font-style: Helvetica;
-	font-size: 200%;
-
-	padding: 10px;
-}*/
 
 
 
