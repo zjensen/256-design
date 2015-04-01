@@ -1,0 +1,86 @@
+body{
+	background-color: #b5c9d4;
+	display:block;
+	vertical-align: middle;
+	text-align: center;
+	height:100%;
+	width:100%;
+}
+a{
+   color:inherit;
+   text-decoration: none;
+}
+div{
+	background-color: white; /* changed to white, seems to make everything a little cleaner*/
+}
+
+
+
+.device{
+	height:100%;
+	width:100%;
+	max-width:800px;
+	margin:auto; /* horizontally centers when max-width is invoked (ie screen is greater than 800 px wide)*/
+}
+/*Open CSS */
+.menu
+{
+	outline:solid black 1px;
+	height:15%;
+	width:100%;
+}
+
+.moleculesToOpen
+{
+	outline:solid black 1px;
+	height:85%;
+	width:100%;
+}
+
+.molecule i
+{
+	display: table-cell !important;
+	vertical-align: middle;
+	font-size: 48px;
+	text-align: right;
+}
+
+.row
+{
+	outline:solid black 1px;
+	height:20%;
+	width:100%;
+	display:inline-flex;
+}
+
+.testosterone
+{
+	background-image: url("testosterone.jpg");
+	background-size: 75% 100%;
+	background-repeat: no-repeat;
+}
+
+.ribose
+{
+	background-image: url("ribose.jpg");
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+}
+
+.molecule
+{
+	outline:solid black 1px;
+	height:100%;
+	width:65%;
+	position: relative;
+	display: table;
+}
+
+.caption
+{
+	outline:solid black 1px;
+	height:100%;
+	width:35%;
+}
+
+/* end Open CSS */
