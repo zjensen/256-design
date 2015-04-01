@@ -209,3 +209,10 @@ height:100%;
 visibility:hidden;
 z-index:50;
 }
+
+.shareimage {
+width: 20%;
+height: 50%;
+margin-top: 4%;
+padding: 2%;
+}
