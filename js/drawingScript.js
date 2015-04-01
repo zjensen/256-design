@@ -185,7 +185,9 @@ var reference_modal = document.getElementById("references");
 function openModal(ID) {
    ID.style.visibility = "visible";  
    document.getElementById("overlay").style.visibility = "visible";// The function opens the specified modal
-
+   //Next two lines are email tests with image sending... we may need to actually upload the images to some server to get this to work right...
+   //var exportimg = canvas.toDataURL("image/png;base64;");
+   //document.getElementById("email_canvas_ahref").href="mailto:?subject=Diagram for O-Chem&body=Here is the image!"+exportimg + "Have a great day!"; 
 }
 function closeModal() {
    var modals = document.getElementsByClassName("modal");
@@ -198,7 +200,8 @@ function closeModal() {
 //Function to export image
 function exportCanvas(){
             var exportimg = canvas.toDataURL("image/png;base64;");
-            window.open(exportimg,"","width=700,height=700");
+            window.open(exportimg,"");
         }
-
+		
+		
 
