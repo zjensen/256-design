@@ -23,6 +23,7 @@ var clickY = new Array();
 var clickDrag = new Array();
 var clickColor = new Array();
 var clickWidth = new Array();
+var previousDrawings = new Array();
 var paint;
 var color = "black";
 var lineWidth = 5;
@@ -136,6 +137,7 @@ function redraw()
 }
 
 
+
 //Changing color
 
 function changeColor(id)
@@ -168,8 +170,3 @@ function popup(element)
 		document.getElementById('menu2').classList.add("hidden");
 	}
 }
-
-
-
-
-

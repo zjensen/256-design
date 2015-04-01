@@ -8,56 +8,54 @@
 		
 	</head>
 	<body>
-		<div>
+		<div class="toolbar">
+			<div class="button">
+				<i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i>
+			</div>
+			<div tabindex="0" class="button palette onclick-menu">
+				<i class="fa fa-paint-brush"></i>
+				<table class="onclick-menu-content">
+					<tr>
+						<td id="red" class="color red" onclick="changeColor(this.id)"></td>
+						<td id="yellow" class="color yellow" onclick="changeColor(this.id)"></td>
+					</tr>
+					<tr>
+						<td id="green" class="color green" onclick="changeColor(this.id)"></td>
+						<td id="blue" class="color blue" onclick="changeColor(this.id)"></td>
+					</tr>
+						<td id="black" class="color black" onclick="changeColor(this.id)"></td>
+						<td id="gray" class="color gray" onclick="changeColor(this.id)"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="button eraser">
+				<i class="fa fa-eraser" onclick="erase()"></i>
+			</div>
+			<div class="button undo">
+				<i class="fa fa-undo"></i> <!-- TO DO functionality-->
+			</div>
+			<div class="button reference">
+				<i class="fa fa-question"></i> <!-- TO DO functionality-->
+			</div>
+		</div>
 
-			<div class="toolbar">
-				<div class="button home">
-					<i style="font-weight:bold;">&#8212</i>
-				</div>
-				<div id = "molecules" class="button"> 
-					<i class="fa fa-connectdevelop"></i>
-				</div>
-				<div id="chemicals" class="button">
-					<i class="fa fa-flask"></i>
-				</div>
-				<div tabindex="0" class="button palette onclick-menu">
-					<i class="fa fa-paint-brush"></i>
-					<table class="onclick-menu-content">
-						<tr>
-							<td id="red" class="color red" onclick="changeColor(this.id)"></td>
-							<td id="yellow" class="color yellow" onclick="changeColor(this.id)"></td>
-						</tr>
-						<tr>
-							<td id="green" class="color green" onclick="changeColor(this.id)"></td>
-							<td id="blue" class="color blue" onclick="changeColor(this.id)"></td>
-						</tr>
-							<td id="black" class="color black" onclick="changeColor(this.id)"></td>
-							<td id="gray" class="color gray" onclick="changeColor(this.id)"></td>
-						</tr>
-					</table>
-				</div>
-				<div class="button eraser">
-					<i class="fa fa-eraser" onclick="erase()"></i>
+		<div id="drawingArea"><!-- Where the user takes notes -->
+			<div tabindex="0" class="onclick-menu2" id="topMenu">
+				<!-- <i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i> -->
+				<div id="menu2" class="menu2 hidden">
+
+					<i class="fa fa-file-o"></i>
+
+					<i class="fa fa-floppy-o"></i>
+
+					<i class="fa fa-folder-open"></i>
+			
+					<i class="fa fa-share-square-o"></i>
+
+					<i class="fa fa-cog"></i>
 				</div>
 			</div>
-
-			<div id="drawingArea"><!-- Where the user takes notes -->
-				
-				<div tabindex="0" class="onclick-menu2" id="topMenu">
-					<i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i>
-					<div id="menu2" class="menu2 hidden">
-						<i class="fa fa-home"></i>
-					
-						<i class="fa fa-floppy-o"></i>
-				
-						<i class="fa fa-file-o"></i>
-				
-						<i class="fa fa-share-square-o"></i>
-					</div>
-				</div>
-			</div> 
-
-		</div>
+		</div> 
 
 		<script type="text/javascript" src="js/drawingScript.js"></script> <!--Place all page-specific javascript in here -->
 	</body>
