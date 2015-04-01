@@ -9,10 +9,14 @@
 	</head>
 	<body>
 			<!--The following is all of the HTML needed for the modals -->
-		<button onclick="openModal()">Open the Modal</button>
-		
 		<div id="overlay" onclick="closeModal()"></div>
-		<div class="modal" id="settings"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is modal text</div>
+		<div class="modal" id="settings"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the settings modal</div>
+		<div class="modal" id="newdrawing"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the newdrawing modal</div>
+		<div class="modal" id="savefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the savefile modal</div>
+		<div class="modal" id="openfile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the openfile modal</div>
+		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the sharefile modal</div>
+		<div class="modal" id="references"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the references modal</div>
+		
 		<div class="toolbar">
 			<!--End of modal code -->
 		
@@ -42,7 +46,7 @@
 				<i class="fa fa-undo"></i> <!-- TO DO functionality-->
 			</div>
 			<div class="button reference">
-				<i class="fa fa-question"></i> <!-- TO DO functionality-->
+				<i class="fa fa-question" onclick="openModal(reference_modal)"></i> <!-- TO DO functionality-->
 			</div>
 		</div>
 
@@ -51,15 +55,16 @@
 				<!-- <i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i> -->
 				<div id="menu2" class="menu2 hidden">
 
-					<i class="fa fa-file-o"></i>
+					<i class="fa fa-file-o" onclick="openModal(new_modal)"></i>
 
-					<i class="fa fa-floppy-o"></i>
+					<i class="fa fa-floppy-o" onclick="openModal(save_modal)"></i>
 
-					<i class="fa fa-folder-open"></i>
+					<i class="fa fa-folder-open" onclick="openModal(open_modal)"></i>
 			
-					<i class="fa fa-share-square-o"></i>
-
-					<i class="fa fa-cog"></i>
+					<i class="fa fa-share-square-o" onclick="openModal(share_modal)"></i>
+					
+					<i class="fa fa-cog" onclick="openModal(settings_modal)"></i>
+				
 				</div>
 			</div>
 		</div> 

@@ -173,8 +173,17 @@ function popup(element)
 
 //Functions for using the modals
 
-function openModal() {
-   document.getElementById("settings").style.visibility = "visible";  
+//create variables for modals (just provide the id of the modal)
+
+var settings_modal = document.getElementById("settings");
+var new_modal = document.getElementById("newdrawing");
+var save_modal = document.getElementById("savefile");
+var open_modal = document.getElementById("openfile");
+var share_modal = document.getElementById("sharefile");
+var reference_modal = document.getElementById("references");
+
+function openModal(ID) {
+   ID.style.visibility = "visible";  
    document.getElementById("overlay").style.visibility = "visible";// The function opens the specified modal
 
 }
