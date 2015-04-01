@@ -1,4 +1,3 @@
-body{
 	background-color: #b5c9d4;
 	display:block;
 	vertical-align: middle;
@@ -6,11 +5,9 @@ body{
 	height:100%;
 	width:100%;
 }
-a{
    color:inherit;
    text-decoration: none;
 }
-div{
 	background-color: white; /* changed to white, seems to make everything a little cleaner*/
 }
 
@@ -35,12 +32,10 @@ div{
 /*NOTE FROM STEVEN --->> MY CODE NO LONGER USES THIS STYLE SHEET,
 FEEL FREE TO EDIT OR DELETE WHATEVER YOU NEED TOO.*/
 
-.settings {
 	font-size: 40px;
 	position: center;
 }
 
-table.tb_settings {
 	width: 100%;
 	height: 90%;
 	/*border: 1px solid grey;*/
@@ -50,18 +45,15 @@ table.tb_settings {
 	
 }
 
-table.customize {
 	width: 60%;
 	padding: 5%;
 	position: left;
 
 }
-tr.tr_settings {
 	border: 2px solid red;
 	/*background-color: #b5c9d4;*/
 }
 
-td:hover {
 	
 	
 /*color: #ecede8;
@@ -70,17 +62,14 @@ td:hover {
 	text-shadow: 5px 5px 10px  #73777a;
 }
 
-td:active {
 	color: #b5c9d4  ;
 	text-shadow: 0px 0px 0px;
 
 }
 
-tr:hover {
 	
 }
 
-td.td_settings {
 	color: #73777a;
 	text-align: center;
 	font-style: Helvetica;
