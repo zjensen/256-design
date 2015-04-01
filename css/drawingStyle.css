@@ -3,7 +3,7 @@
     width:15%;
     float:left;
     height:100%;
-    background-color: #ecede8 !important;
+    background-color: #558CBA !important;
 }
 
 i{
@@ -32,7 +32,7 @@ i{
 }
 
 .toolbar div{
-    background-color: #ecede8 !important;
+    background-color: #558CBA !important;
 }
 #drawingArea{
     cursor:crosshair ;
@@ -107,7 +107,7 @@ i{
     vertical-align: middle;
 }*/
 .menu2 {
-    background-color: #ecede8;
+    background-color: #3672A3;
     height:100%;
     color:#fd7e47;
     width:100%;
