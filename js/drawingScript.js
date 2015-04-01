@@ -170,3 +170,19 @@ function popup(element)
 		document.getElementById('menu2').classList.add("hidden");
 	}
 }
+
+//Functions for using the modals
+
+function openModal() {
+   document.getElementById("settings").style.visibility = "visible";  
+   document.getElementById("overlay").style.visibility = "visible";// The function opens the specified modal
+
+}
+function closeModal() {
+   var modals = document.getElementsByClassName("modal");
+	for (i = 0; i < modals.length; i++) { 
+		modals[i].style.visibility = "hidden";  
+	}   
+   document.getElementById("overlay").style.visibility = "hidden"; // The function hides all modals
+}
+
