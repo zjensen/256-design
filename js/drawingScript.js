@@ -195,3 +195,10 @@ function closeModal() {
    document.getElementById("overlay").style.visibility = "hidden"; // The function hides all modals
 }
 
+//Function to export image
+function exportCanvas(){
+            var exportimg = canvas.toDataURL("image/png;base64;");
+            window.open(exportimg,"","width=700,height=700");
+        }
+
+
