@@ -3,7 +3,7 @@
     width:15%;
     float:left;
     height:100%;
-    background-color: #3672A3 !important;
+    background-color: #FF9330 !important;
 }
 
 i{
@@ -22,7 +22,7 @@ i{
     margin-left:10%;
     margin-right:10%;
     font-size: 48px;
-    color:#fd7e47;
+    color:white;
     display:table;
 }
 
@@ -42,7 +42,7 @@ i{
 }
 
 .toolbar div{
-    background-color: #3672A3 !important;
+    background-color: #FF9330 !important;
 }
 #drawingArea{
     cursor:crosshair ;
@@ -120,17 +120,16 @@ i{
     vertical-align: middle;
 }*/
 .menu2 {
-    z-index: 3;
-    background-color: #558CBA;
-    height: 100%;
-    color: #fd7e47;
-    width: 95%;
-    text-align: center;
-    font-size: 48px;
-    display: table;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-    border-radius: 0px 15px 15px 0px;
+background-color: #7198BA;
+height: 100%;
+color: white;
+width: 95%;
+text-align: center;
+font-size: 48px;
+display: table;
+-webkit-transition: width 2s;
+transition: width 2s;
+border-radius: 0px 15px 15px 0px;
 }
 .menu2 i{
     width:20%;
@@ -143,8 +142,8 @@ i{
     position: absolute;
     width:85%;
     height:20%;
-    outline: none !important;
     z-index: 3;
+    outline: none !important;
 }
 .onclick-menu2 li{
     display: inline-table;
@@ -163,9 +162,6 @@ i{
     visibility: hidden;
     opacity: 0;
     width:50%;
-    z-index: 0 !important
-}
-.hiddenTop{
     z-index: 0 !important
 }
 
