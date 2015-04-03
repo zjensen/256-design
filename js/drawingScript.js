@@ -23,7 +23,8 @@ var clickY = new Array();
 var clickDrag = new Array();
 var clickColor = new Array();
 var clickWidth = new Array();
-var previousDrawings = new Array();
+var previous = new Array();
+previous.push(0);
 var paint;
 var color = "black";
 var lineWidth = 5;
@@ -50,11 +51,19 @@ document.getElementById('canvas').onmousemove = function(e) //mouse moved
 document.getElementById('canvas').onmouseup = function(e) //mouse no longer held down (un-clicked)
 {
 	paint = false;
+	if(previous[previous.length -1] != clickX.length)
+	{
+		previous.push(clickX.length);
+	}
 }
 
 document.getElementById('canvas').onmouseleave = function(e) //mouse dragged out of element
 {
 	paint = false;
+	if(previous[previous.length -1] != clickX.length)
+	{
+		previous.push(clickX.length);
+	}
 }
 
 //TOUCH SCREEN OPTIONS**************************************************
@@ -86,16 +95,28 @@ function touchMoveHandler(e) //finger dragged
 function touchEndHandler(e) //finger lifted up
 {
 	paint = false;
+	if(previous[previous.length -1] != clickX.length)
+	{
+		previous.push(clickX.length);
+	}
 }
 
 function touchLeaveHandler(e) //finger leaves element
 {
 	paint = false;
+	if(previous[previous.length -1] != clickX.length)
+	{
+		previous.push(clickX.length);
+	}
 }
 
 function touchCancelHandler(e) //finger leaves device
 {
 	paint = false;
+	if(previous[previous.length -1] != clickX.length)
+	{
+		previous.push(clickX.length);
+	}
 }
 
 //DRAWING OCCURS BELOW
@@ -134,6 +155,26 @@ function redraw()
 		context.lineWidth = clickWidth[i];
 		context.stroke();
 	}
+}
+
+function undo()
+{
+	var l = previous.length;
+	if(l > 1)
+	{
+		var pointsToRemove = previous[l-1] - previous[l-2]; //number of points to paint over
+
+		clickX.splice(previous[l-2], pointsToRemove);
+		clickY.splice(previous[l-2], pointsToRemove);
+		clickDrag.splice(previous[l-2], pointsToRemove);
+		clickColor.splice(previous[l-2], pointsToRemove);
+		clickWidth.splice(previous[l-2], pointsToRemove);
+
+		previous.splice(l-1,1);
+
+		redraw();
+	}
+	
 }
 
 
