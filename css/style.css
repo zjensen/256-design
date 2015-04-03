@@ -2,6 +2,11 @@ body{
 	margin:0;
 }
 
+body, div,a,p
+{
+	font-family:'Quicksand';
+}
+
 #settings body{
 	background-color: #b5c9d4;
 	display:block;
