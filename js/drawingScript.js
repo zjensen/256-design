@@ -162,12 +162,14 @@ function popup(element)
 		element.classList.remove('fa-plus-circle');
 		element.classList.add('fa-minus-circle');
 		document.getElementById('menu2').classList.remove("hidden");
+		document.getElementById('topMenu').classList.remove("hidden");
 	}
 	else
 	{
 		element.classList.add('fa-plus-circle');
 		element.classList.remove('fa-minus-circle');
 		document.getElementById('menu2').classList.add("hidden");
+		document.getElementById('topMenu').classList.add("hidden");
 	}
 }
 
