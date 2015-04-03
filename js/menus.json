@@ -1,0 +1,16 @@
+"sidebar":
+[
+	{"button":"colors"}
+	{"button":"eraser"}
+	{"button":"undo"}
+	{"button":"references"}
+]
+
+"topMenu"
+[
+	{"button":"new"}
+	{"button":"save"}
+	{"button":"open"}
+	{"button":"share"}
+	{"button":"settings"}
+]
