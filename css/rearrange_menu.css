@@ -102,7 +102,6 @@ p,div,a,body
 #settings td.filler {
 	color: #73777a;
 	text-align: center;
-	font-style: Helvetica;
 	font-size: 200%;
 
 	
@@ -127,14 +126,18 @@ p,div,a,body
 }
 
 #settings i.icon:hover {
-	text-shadow: 0px 0px 15px #73777a;
+	color: #73777a;
+	text-shadow: 0px 0px 15px #fd7e47;
+	
 
 	
 }
 
 #settings i.icon:active {
-	color: #73777a;
-	text-shadow: 0px 0px 15px #fd7e47;
+	color: #fd7e47;
+	text-shadow: 0px 0px 15px #73777a;
+}
+	
 	
 
 /*********************/

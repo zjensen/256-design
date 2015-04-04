@@ -21,5 +21,5 @@ function customize_tools()
 
 function logout()
 {
-	open("login.html","_self");
+	open("login.html","_seft");
 }

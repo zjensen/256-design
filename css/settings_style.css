@@ -134,5 +134,10 @@ body, div, p, a
 	font-size: 300%;
 }
 
+#settings i.icon:active {
+	color: #fd7e47;
+	text-shadow: 0 0 15px #73777a;
+}
+
 
 /*********************/
