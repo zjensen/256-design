@@ -253,3 +253,7 @@ th {
     background-color: grey;
     color: white;
 }
+
+iframe{
+display:none;
+}

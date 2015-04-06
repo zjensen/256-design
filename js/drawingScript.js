@@ -230,7 +230,8 @@ var computer_modal = document.getElementById("computerstream");
 
 function openModal(ID) {
    closeModal();
-   ID.style.visibility = "visible";  
+   ID.style.visibility = "visible";
+	document.getElementById("settingsframe").style.display = "block";
    document.getElementById("overlay").style.visibility = "visible";// The function opens the specified modal
    //Next two lines are email tests with image sending... we may need to actually upload the images to some server to get this to work right...
    //var exportimg = canvas.toDataURL("image/png;base64;");
@@ -242,6 +243,7 @@ function closeModal() {
 		modals[i].style.visibility = "hidden";  
 	}   
    document.getElementById("overlay").style.visibility = "hidden"; // The function hides all modals
+   document.getElementById("settingsframe").style.display = "none";
 }
 
 //Function to export image
