@@ -224,8 +224,12 @@ var save_modal = document.getElementById("savefile");
 var open_modal = document.getElementById("openfile");
 var share_modal = document.getElementById("sharefile");
 var reference_modal = document.getElementById("references");
+var wifi_modal = document.getElementById("wifi");
+var bluetooth_modal = document.getElementById("bluetooth");
+var computer_modal = document.getElementById("computerstream");
 
 function openModal(ID) {
+   closeModal();
    ID.style.visibility = "visible";  
    document.getElementById("overlay").style.visibility = "visible";// The function opens the specified modal
    //Next two lines are email tests with image sending... we may need to actually upload the images to some server to get this to work right...

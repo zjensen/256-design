@@ -13,6 +13,95 @@
 		<div class="modal" id="settings"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br><iframe src="settings.html" frameBorder="0" style='position: absolute; left: 13px; top: 90px; width: 98%; height: 79%'></iframe></div>
 		<!--<div class="modal" id="newdrawing"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the newdrawing modal</div>-->
 		<div class="modal" id="newdrawing"></div>
+		<div class="modal" id="computerstream"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><h1 text-align:center;>File Stream</h1><div id="image_list"><image class="streamimage" src="images/compounds1.gif"><image class="streamimage" src="images/compounds2.gif"><image class="streamimage" src="images/compounds3.gif"><image class="streamimage" src="images/compounds4.gif"><image class="streamimage" src="images/compounds1.gif"><image class="streamimage" src="images/compounds2.gif"><image class="streamimage" src="images/compounds3.gif"><image class="streamimage" src="images/compounds4.gif">        </div></div>
+		<div class="modal" id="bluetooth"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><h1 style="text-align:center;">Send Via Bluetooth </h1>
+		
+		<table align="center" style="width:50%;">
+  <tr>
+    <td style="font-weight:bold;">Username</td>
+    <td style="font-weight:bold;">Device</td>		
+  </tr>
+  <tr>
+    <td>Jsmith</td>
+    <td>METO1A</td>		
+  </tr>
+  <tr>
+    <td>BillyMan</td>
+    <td>XR984</td>		
+  </tr>
+  <tr>
+    <td>TheWhiz</td>
+    <td>LENYOGA</td>		
+  </tr>
+  <tr>
+    <td>Sk84ever</td>
+    <td>AIR17813</td>		
+  </tr>
+  <tr>
+    <td>Spngbb</td>
+    <td>PiNeApPlE</td>		
+  </tr>
+  <tr>
+    <td>Prof. Teacherman</td>
+    <td>YROS23</td>		
+  </tr>
+  <tr>
+    <td>SallyR</td>
+    <td>8AV0ER</td>		
+  </tr>
+  <tr>
+    <td>Johnson</td>
+    <td>23JFVJ34</td>		
+  </tr>
+<tr>
+    <td>SEND TO ALL</td>
+    <td> </td>		
+  </tr>
+</table></div>
+		<div class="modal" id="wifi"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><h1 style="text-align:center;">Send Via Wifi </h1>
+		<table align="center" style="width:50%; border-spacing: 5px;">
+  <tr>
+    <td style="font-weight:bold;">Username</td>
+    <td style="font-weight:bold;">Device</td>		
+  </tr>
+  <tr>
+    <td>Jsmith</td>
+    <td>METO1A</td>		
+  </tr>
+  <tr>
+    <td>BillyMan</td>
+    <td>XR984</td>		
+  </tr>
+  <tr>
+    <td>TheWhiz</td>
+    <td>LENYOGA</td>		
+  </tr>
+  <tr>
+    <td>Sk84ever</td>
+    <td>AIR17813</td>		
+  </tr>
+  <tr>
+    <td>Spngbb</td>
+    <td>PiNeApPlE</td>		
+  </tr>
+  <tr>
+    <td>Prof. Teacherman</td>
+    <td>YROS23</td>		
+  </tr>
+  <tr>
+    <td>SallyR</td>
+    <td>8AV0ER</td>		
+  </tr>
+  <tr>
+    <td>Johnson</td>
+    <td>23JFVJ34</td>		
+  </tr>
+<tr>
+    <td>SEND TO ALL</td>
+    <td> </td>		
+  </tr>
+</table>
+		</div>
 		<div class="modal" id="savefile">
 			<div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  
 			<h1> Save Diagram </h1>
@@ -38,7 +127,7 @@
 				<button type="submit" class="btn btn-primary btn-block btn-large">OPEN</button>
 			</form>
 		</div>
-		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> <a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><image class="shareimage" src="images/email.png"></a> <a href="#"><image class="shareimage" src="images/wifi.png"></a>  <a href="" onclick="exportCanvas()"><image class="shareimage" src="images/download.png"></a><a href="#"><image class="shareimage" src="images/bluetooth.png"></a> </div>
+		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> <a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><image class="shareimage" src="images/email.png"></a> <a href="#" onclick="openModal(wifi_modal)"><image class="shareimage" src="images/wifi.png"></a>  <a href="" onclick="exportCanvas()"><image class="shareimage" src="images/download.png"></a><a href="#" onclick="openModal(bluetooth_modal)"><image class="shareimage" src="images/bluetooth.png"></a> <a href="#" onclick="openModal(computer_modal)"><image class="shareimage" src="images/computer.png"></a> </div>
 		<div class="modal" id="references"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><image src="images/functional-groups.jpg" style="float:left; height:85%; width:30%;"><image src="images/PeriodicTable.png" style="float:left; width:60%;"></div>
 		
 		<div class="toolbar">
