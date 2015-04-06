@@ -1,6 +1,7 @@
 body, div, a, padding
 {
 	font-family: 'Quicksand';
+	text-decoration: none;
 }
 
 #settings body{
