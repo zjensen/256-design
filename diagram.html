@@ -20,7 +20,24 @@
 				<button type="submit" class="btn btn-primary btn-block btn-large">SAVE</button>
 			</form>
 		</div>
-		<div class="modal" id="openfile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the openfile modal</div>
+		<div class="modal" id="openfile">
+			<div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  
+			<br>This is the openfile modal
+			<h1> Open Previous Diagram </h1>
+			<form class="openForm" onsubmit="">
+				<select name='files'>
+					<option selected>C17H21NO4</option>
+					<option>C10H15N</option>
+					<option>C11H15NO2</option>
+					<option>C21H30O2</option>
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+				<button type="submit" class="btn btn-primary btn-block btn-large">OPEN</button>
+			</form>
+		</div>
 		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> <a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><image class="shareimage" src="images/email.png"></a> <a href="#"><image class="shareimage" src="images/wifi.png"></a>  <a href="" onclick="exportCanvas()"><image class="shareimage" src="images/download.png"></a><a href="#"><image class="shareimage" src="images/bluetooth.png"></a> </div>
 		<div class="modal" id="references"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><image src="images/functional-groups.jpg" style="float:left; height:85%; width:30%;"><image src="images/PeriodicTable.png" style="float:left; width:60%;"></div>
 		

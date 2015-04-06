@@ -1,17 +1,100 @@
 <html>
 	<head>
-		<!-- This will be the home page. I just added links to the three pages.-->
 		<meta charset="utf-8">
 		<title>O-Chem App</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"><!-- This is our style sheet-->
 		<link href="css/font-awesome.min.css" rel="stylesheet" ><!-- Font awesome style sheet for inserting icons -->
+		<link rel="stylesheet" type="text/css" href="css/drawingStyle.css">
+		
 	</head>
 	<body>
-		<div class="device"> <!-- Everything needs to be within this div, it defines the max width on our devices so pages arent too wide -->
-			<a href="diagram.html"><div class="">New Diagram</div><a>
-			<a href="open.html"><div class="">Open Previous Diagrams</div></a>
-			<a href="settings.html"><div class="">Your settings</div></a>
+			<!--The following is all of the HTML needed for the modals -->
+		<div id="overlay" onclick="closeModal()"></div>
+		<div class="modal" id="settings"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br><iframe src="settings.html" frameBorder="0" style='position: absolute; left: 13px; top: 90px; width: 98%; height: 79%'></iframe></div>
+		<div class="modal" id="newdrawing"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the newdrawing modal</div>
+		<div class="modal" id="savefile">
+			<div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  
+			<h1> Save Diagram </h1>
+			<form class="saveForm" onsubmit="alert('Diagram successfully saved to the cloud.');">
+				<input type="text" name="u" placeholder="Diagram Name" required="required"/>
+				<button type="submit" class="btn btn-primary btn-block btn-large">SAVE</button>
+			</form>
 		</div>
-		<script type="text/javascript" src="js/script.js"></script> <!-- Our javascript file placed at end so it runs once page is built -->
+		<div class="modal" id="openfile">
+			<div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>
+			<h1> Open Previous Diagram </h1>
+			<form class="openForm" onsubmit="">
+				<select name='files'>
+					<option selected>C17H21NO4</option>
+					<option>C10H15N</option>
+					<option>C11H15NO2</option>
+					<option>C21H30O2</option>
+					<option>Tetrahydrocannabinol</option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+				<button type="submit" class="btn btn-primary btn-block btn-large">OPEN</button>
+			</form>
+		</div>
+		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> <a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><image class="shareimage" src="images/email.png"></a> <a href="#"><image class="shareimage" src="images/wifi.png"></a>  <a href="" onclick="exportCanvas()"><image class="shareimage" src="images/download.png"></a><a href="#"><image class="shareimage" src="images/bluetooth.png"></a> </div>
+		<div class="modal" id="references"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><image src="images/functional-groups.jpg" style="float:left; height:85%; width:30%;"><image src="images/PeriodicTable.png" style="float:left; width:60%;"></div>
+		
+		<div class="toolbar">
+			<!--End of modal code -->
+		
+			<div class="button">
+				<i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i>
+			</div>
+			<div tabindex="0" class="button palette onclick-menu">
+				<i class="fa fa-paint-brush"></i>
+				<table class="onclick-menu-content">
+					<tr>
+						<td id="red" class="color red" onclick="changeColor(this.id)"></td>
+						<td id="yellow" class="color yellow" onclick="changeColor(this.id)"></td>
+					</tr>
+					<tr>
+						<td id="green" class="color green" onclick="changeColor(this.id)"></td>
+						<td id="blue" class="color blue" onclick="changeColor(this.id)"></td>
+					</tr>
+						<td id="black" class="color black" onclick="changeColor(this.id)"></td>
+						<td id="gray" class="color gray" onclick="changeColor(this.id)"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="button eraser">
+				<i class="fa fa-eraser" onclick="erase()"></i>
+			</div>
+			<div class="button undo">
+				<i class="fa fa-undo" onclick="undo()"></i>
+			</div>
+			<div class="button reference">
+				<i class="fa fa-question" onclick="openModal(reference_modal)"></i> <!-- TO DO functionality-->
+			</div>
+		</div>
+
+		<div id="drawingArea" ><!-- Where the user takes notes -->
+			<div tabindex="0" class="onclick-menu2 hidden" id="topMenu">
+				<!-- <i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i> -->
+				<div id="menu2" class="menu2 hidden">
+
+					<i class="fa fa-file-o" onclick="openModal(new_modal)"></i>
+
+					<i class="fa fa-floppy-o" onclick="openModal(save_modal)"></i>
+
+					<i class="fa fa-folder-open" onclick="openModal(open_modal)"></i>
+			
+					<i class="fa fa-share-square-o" onclick="openModal(share_modal)"></i>
+					
+					<i class="fa fa-cog" onclick="openModal(settings_modal)"></i>
+				
+				</div>
+			</div>
+		</div> 
+		
+
+
+
+		<script type="text/javascript" src="js/drawingScript.js"></script> <!--Place all page-specific javascript in here -->
 	</body>
 </html>
