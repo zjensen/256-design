@@ -11,7 +11,8 @@
 			<!--The following is all of the HTML needed for the modals -->
 		<div id="overlay" onclick="closeModal()"></div>
 		<div class="modal" id="settings"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br><iframe src="settings.html" frameBorder="0" style='position: absolute; left: 13px; top: 90px; width: 98%; height: 79%'></iframe></div>
-		<div class="modal" id="newdrawing"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the newdrawing modal</div>
+		<!--<div class="modal" id="newdrawing"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  <br>This is the newdrawing modal</div>-->
+		<div class="modal" id="newdrawing"></div>
 		<div class="modal" id="savefile">
 			<div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div>  
 			<h1> Save Diagram </h1>
@@ -78,8 +79,9 @@
 				<!-- <i id="menuButton" class="fa fa-plus-circle" onclick="popup(this)" ontouch="popup(this)"></i> -->
 				<div id="menu2" class="menu2 hidden">
 
-					<i class="fa fa-file-o" onclick="openModal(new_modal)"></i>
-
+					<!--<i class="fa fa-file-o" onclick="openModal(new_modal)"></i>-->
+					<i class="fa fa-file-o" onclick="refresh_page()"></i> 
+					
 					<i class="fa fa-floppy-o" onclick="openModal(save_modal)"></i>
 
 					<i class="fa fa-folder-open" onclick="openModal(open_modal)"></i>

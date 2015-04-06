@@ -246,5 +246,8 @@ function exportCanvas(){
             window.open(exportimg,"");
         }
 		
+function refresh_page(){
+			window.location.reload();
+}
 		
 
