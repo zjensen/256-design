@@ -20,53 +20,71 @@
 		<td class = "filler" colspan = "3" width = "100%"> SELECT WHICH NOTES TO DELETE </td>
 </tr>
 <tr>
-		<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+		<td id = "aa" class = "td_settings" width = "19%">
+		<div class = "customize" id = "a" 
+				onclick = "check(id)">
 			<i id = "1" class="icon fa fa-file-o"></i>
+			<br>Benzyne
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ab" class = "td_settings" width = "19%">
+		<div class = "customize" id = "b" 
+				onclick = "check(id)">
 			<i id = "2" class="icon fa fa-file-o"></i>
+			<br>Sodium Bicarbonate
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ac" class = "td_settings" width = "19%">
+		<div class = "customize" id = "c" 
+				onclick = "check(id)">
 			<i id = "3" class="icon fa fa-file-o"></i>
+			<br>Hydrogen Monoxyde
 		</div>
 	</td>
 </tr>
 <tr>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ad" class = "td_settings" width = "19%">
+		<div class = "customize" id = "d" 
+				onclick = "check(id)">
 			<i id = "4" class="icon fa fa-file-o"></i>
+			<br>Dr Pepper
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ae" class = "td_settings" width = "19%">
+		<div class = "customize" id = "e" 
+				onclick = "check(id)">
 			<i id = "5" class="icon fa fa-file-o"></i>
+			<br>Ectoplasm
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "af" class = "td_settings" width = "19%">
+		<div class = "customize" id = "f" 
+				onclick = "check(id)">
 			<i id = "6" class="icon fa fa-file-o"></i>
+			<br>Troll Boogies
 		</div>
 	</td>
 </tr>
 <tr>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ag" class = "td_settings" width = "19%">
+		<div class = "customize" id = "g" 
+				onclick = "check(id)">
 			<i id = "7" class="icon fa fa-file-o"></i>
+			<br>Uncle Earl's Hairpeice
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ah" class = "td_settings" width = "19%">
+		<div class = "customize" id = "h" 
+				onclick = "check(id)">
 			<i id = "8" class="icon fa fa-file-o"></i>
+			<br>Glucose
 		</div>
 	</td>
-	<td class = "td_settings" width = "19%">
-		<div class = "customize" id = "g" >
+	<td id = "ai" class = "td_settings" width = "19%">
+		<div class = "customize" id = "i" 
+				onclick = "check(id)">
 			<i id = "9" class="icon fa fa-file-o"></i>
+			<br>Nutrobenzyte
 		</div>
 	</td>
 </tr>
@@ -84,5 +102,23 @@
 	</section>
 
 		<script type="text/javascript" src="js/script.js"></script>
+		<script>
+		function erase(x)
+		{
+			document.getElementById(x).innerHTML = "";
+			x = "a" + x;
+			document.getElementById(x).className = "filler";
+		}
+		function check(x)
+		{
+			var r = confirm("Are you sure you want to delete?");
+			if (r == true) {
+    			alert("Your document has been deleted.");
+    			erase(x);
+			} else {
+   				alert("Your document is safe with us.");
+			}
+		}
+		</script>
 	</body>
 </html>

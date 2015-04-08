@@ -10,7 +10,9 @@
 		<section id = "settings">
 		<div class="device">
 			<!-- Place everything in here IF you want a more vertical feel. This div has a maxwidth of 800px so it wont look awkward on big devices -->
-
+					<div id = "settings" class = "save" onclick="save()">
+						Save
+					</div>
 			<table width = "80%"
 				   style = "position:center">
 				<tr >
@@ -34,11 +36,22 @@
 				<tr>
 					<td colspan = "6"
 						width = "80%">
-						<div id = "settings" class = "form"> Change Email? </div>
+						<div width = "50%" id = "settings" class = "form"> Change Password? </div>
 						
-						<divid = "settings" class = "form">
+						<div width = "50%" id = "settings" class = "form">
 							<form  id = "settings">
-								<input size = "41" type="text" name="Email" value="Email Address">
+								<input size = "41" type="text" name="Email" value="Password">
+							</form>
+						</div>
+					</td>
+				</tr>				<tr>
+					<td colspan = "6"
+						width = "80%">
+						<div width = "50%" id = "settings" class = "form"> Change Email? </div>
+						
+						<div width = "50%" id = "settings" class = "form">
+							<form  id = "settings">
+								<input size = "51" type="text" name="Email" value="Email Address">
 							</form>
 						</div>
 					</td>
@@ -65,5 +78,11 @@
 		</div>
 	</section>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script>
+		function save()
+		{
+			alert("Your Settings WOULD have been saved...\n if this app had a backend");
+		}
+		</script>
 	</body>
 </html>

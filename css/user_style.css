@@ -1,4 +1,4 @@
-body,p,a,div,form
+body,p,a,div,form,td,tr
 {
 	font-family:'Quicksand';
 }
@@ -46,7 +46,6 @@ body,p,a,div,form
 #settings td {
 	color: #73777a;
 	text-align: center;
-	font-style: Helvetica;
 	font-size: 200%;
 
 	border: 5px solid #73777a;
@@ -56,7 +55,6 @@ body,p,a,div,form
 #settings td.filler {
 	color: #73777a;
 	text-align: center;
-	font-style: Helvetica;
 	font-size: 200%;
 
 	border: 0px;
@@ -88,7 +86,27 @@ body,p,a,div,form
 	color: #fd7e47;
 }
 
+#settings div.save {
+	font-family:'Quicksand';
+	text-decoration: underline;
+}
+
+#settings div.save:hover {
+	text-decoration: bold;
+	text-decoration: none;
+	color: black;
+	text-shadow: 0 0 15px #fd7e47;
+
+}
+
+#settings div.save:active {
+	text-shadow: 0 0 5px #73777a;
+	color: #fd7e47;
+
+}
+
 #settings form {
 
 
+   font-family:'Quicksand';
 }

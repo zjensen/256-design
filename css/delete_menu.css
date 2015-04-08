@@ -1,4 +1,4 @@
-body, div, a, padding
+body, div, a, td, tr
 {
 	font-family: 'Quicksand';
 	text-decoration: none;
@@ -98,10 +98,11 @@ body, div, a, padding
 	color: #73777a;
 	text-align: center;
 	font-size: 150%;
-
+	border: none;
 	
 	padding: 10px;
 }
+
 
 #settings a.link {
 	color: #73777a;
