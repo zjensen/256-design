@@ -23,3 +23,4 @@ function logout()
 {
 	open("login.html","_seft");
 }
+
