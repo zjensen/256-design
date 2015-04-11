@@ -6,7 +6,7 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet" ><!-- Font awesome style sheet for inserting icons -->
 		<link rel="stylesheet" type="text/css" href="css/drawingStyle.css">
 		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-		
+		<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
 	</head>
 	<body>
 			<!--The following is all of the HTML needed for the modals -->
@@ -128,7 +128,11 @@
 				<button type="submit" class="btn btn-primary btn-block btn-large">OPEN</button>
 			</form>
 		</div>
-		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> <a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><image class="shareimage" src="images/email.png"></a> <a href="#" onclick="openModal(wifi_modal)"><image class="shareimage" src="images/wifi.png"></a>  <a href="" onclick="exportCanvas()"><image class="shareimage" src="images/download.png"></a><a href="#" onclick="openModal(bluetooth_modal)"><image class="shareimage" src="images/bluetooth.png"></a> <a href="#" onclick="openModal(computer_modal)"><image class="shareimage" src="images/computer.png"></a> </div>
+		<div class="modal" id="sharefile"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div> 
+		<div class="shareButtons">
+			<a href="mailto:?subject=Diagram for O-Chem&body=Here%20is%20the%20image!%20%20Have%20a%20great%20day!" id="email_canvas_ahref" onclick="emailCanvas()"><i class="fa fa-envelope-o"></i></a> <a href="#" onclick="openModal(wifi_modal)"><i class="fa fa-wifi"></i></a>  <a href="" onclick="exportCanvas()"><i class="fa fa-download"></i></a><a href="#" onclick="openModal(bluetooth_modal)"><i class="md md-bluetooth"></i></a> <a href="#" onclick="openModal(computer_modal)"><i class="fa fa-file-image-o"></i></a> 
+		</div>
+		</div>
 		<div class="modal" id="references"><div id="cancelbutton"><i class="fa fa-times-circle" onclick="closeModal()"></i></div><image src="images/functional-groups.jpg" style="float:left; height:85%; width:30%;"><image src="images/PeriodicTable.png" style="float:left; width:60%;"></div>
 		
 		<div class="toolbar">
