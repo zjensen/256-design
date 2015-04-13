@@ -127,8 +127,8 @@ width: 95%;
 text-align: center;
 font-size: 48px;
 display: table;
--webkit-transition: width 2s;
-transition: width 2s;
+-webkit-transition: width 1s;
+transition: width 1s;
 border-radius: 0px 15px 15px 0px;
 }
 .menu2 i{

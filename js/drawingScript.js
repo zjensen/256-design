@@ -183,16 +183,16 @@ function undo()
 
 function changeColor(id)
 {
-	document.getElementById("drawingArea").style.cursor = "crosshair";
+	// document.getElementById("drawingArea").style.cursor = "crosshair";
 	color = id;
 	lineWidth = 5;
 }
 
 function erase()
 {
-	document.getElementById("drawingArea").style.cursor = 'url("http://dygraphs.com/tests/drawing/cursor-eraser.png"), auto';
+	// document.getElementById("drawingArea").style.cursor = 'url("http://dygraphs.com/tests/drawing/cursor-eraser.png"), auto';
 	color = "white";
-	lineWidth = 20;
+	lineWidth = 50;
 }
 
 //Changing the icons when the popup is expanded or closed
